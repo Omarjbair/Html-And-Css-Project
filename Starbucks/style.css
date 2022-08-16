@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins' ,sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+header .img1{
+    margin-left: 7%;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+header .img1:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+header nav ul{
+    margin-right: 100px;
+
+}
+header nav ul li{
+   list-style-type: none;
+   display: inline-block;
+   margin: 25px;
+   position: relative;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #097143;
+     left: 0;
+     bottom: -5px;
+     transition: 0.5s;
+}
+header nav ul li:hover::after{
+    width: 100%;
+}
+.circle{
+    content:'';
+    clip-path: circle(40% at bottom right);
+    background-color: #097143;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.img2{
+    z-index: 1;
+    position: absolute;
+    right: 230px;
+    bottom: 100px;
+    animation: x 4s infinite;
+}
+.letters{
+    width: 550px;
+    position: absolute;
+    left: 200px;
+    top: 250px;
+    letter-spacing: 3px;
+}
+ h1{
+    font-size:50px ;
+    color: #333233;
+
+ }
+ span{
+color: #097143;
+font-weight: 900;
+font-size: 70px;
+transition: 0.5s;
+ }
+ p{
+width: 550px;
+font-size: 20px;
+ }
+ input{
+    position: absolute;
+    left: 200px;
+    top: 540px;
+    border-radius: 40px;
+    color: white;
+    background-color: #097143;
+    padding: 7px 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-style: none;
+ }
+ input:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+ .product{
+    position: absolute;
+    left: 38%;
+   top: 85%;
+ }
+ .product a{
+    padding: 30px;
+ }
+ .product a img{
+    transition: 0.5s;
+ }
+.product a img:hover{
+transform: scale(1.4);
+ }
+.social {
+    position: absolute;
+    left: 95%;
+    top: 50%;
+}
+.social img{
+    padding: 10px;
+    transition: 0.5s;  
+}
+.social img:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+span:hover{
+letter-spacing: 7.8px;
+cursor: pointer;
+}
+@keyframes x {
+ 0%{transform: translate(-40px,-40px);}
+ 50%{transform: translate(10px,10px)}
+ 100%{transform: translate(-40px,-40px);}
+}
